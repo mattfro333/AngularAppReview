@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="reviewApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+  </link>
+  </head>
+  <body>
+    <nav>
+      <p ui-sref="home">Home</p>
+        <p ui-sref="characters">Characters</p>
+          <p ui-sref="vehicles">Vehicles</p>
+
+    </nav>
+
+    <ui-view style="display: flex; flex-direction: column; justify-content: center; align-items: center;"></ui-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+
+  <script src="./app.js"></script>
+  <script src="./js/controller/homeCtrl.js"></script>
+  <script src="./js/controller/charactersCtrl.js"></script>
+  <script src="./js/controller/vehiclesCtrl.js"></script>
+  <script src="./js/services/mainService.js"></script>
+  <script src="./js/directives/enlargeDirective.js"></script>
+  </body>
+</html>
